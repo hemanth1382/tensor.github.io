@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hello</title>
+        
+
+        <style type="text/css">
+            
+            body{
+                /* background-color:rgb(0, 124, 128); */
+                background-image: linear-gradient(to right,rgb(0, 124, 128),rgb(10, 143, 92));
+            }
+            #grad
+            {
+                background-image: linear-gradient(to right,rgb(0, 124, 128),white,rgb(0, 124, 128));
+                /* position: absolute; */
+                /* top:0px;  */
+                height: 70px;
+            }
+            #logo{
+                    position: absolute;
+                top:5px;
+                left:35%;
+                /* border-bottom-color: black;
+                border-bottom-width: 5px;
+                border-bottom-style: solid; */
+                
+            }
+           
+                hr {
+            position: relative;
+            top: -10px;
+            border: none;
+            height: 5px;
+            background: black;
+            /* margin-bottom: 50px; */
+        
+    
+            }
+            #image{
+                position: absolute;
+                top:150px;
+            }
+            #input{
+                position: absolute;
+                top:200px;
+                left:900px;
+                background-color: rgb(23, 95, 77);
+                
+                border-width: 3px;
+                border-style: solid;
+                border-color:black;
+                padding-left:15px;
+                padding-right:90px;
+                padding-bottom: 20px;
+                
+            }
+            #size{
+                width: 1px;
+            }
+            #bottom{
+                position:absolute;
+                top:600px;
+                color:white;
+            }
+
+        </style>
+        <script >
+            function fun()
+            {
+              var fn=document.getElementById("fname").value;
+              var ln=document.getElementById("lname").value;
+              var passc=document.getElementById("passw").value;
+              if(passc==fn+'@'+ln)
+              {
+                  alert("Successful login");
+                  
+              }
+              else
+              {
+                  alert("Incorrect details");
+              }
+              
+            }
+          </script>
+    </head>
+    <body>
+        <div id="grad"></div>
+        <div id="logo">
+            
+            <img src="tensor_logo4.png" width="400px">
+        </div>
+       
+            <hr color="black">
+        
+        <div id="image">
+            <img src="tesors_image.png">
+        </div>
+        <divi id="input">
+            <h3>Fisrt name : </h3>
+            <!-- <p font-size:10px>Username</p> -->
+            <input type="text" id="fname"size="75"placeholder="Fisrt Name">
+            <!-- <br> -->
+            <h3>Last name : </h3>
+            <input type="text" id="lname"size="75"placeholder="Last Name">
+            <br>
+            <h3>passcode :</h3>
+            <input type="text" id="passw" size="75" placeholder="Passcode">
+            <br><br>
+             <input type="checkbox" id="checkbun" name="cbun">
+            <label for="cbun">Check me</label>
+             <!-- <input type="button" id="sub" name="submit">  --><br><br>
+            <input type="submit" value="Submit" id="sub" name="" onclick="fun()">
+            <p id="pp"></p>
+            
+        </divi>
+        
+        <div id="bottom">
+
+        </div>
+    </body>
+</html>
